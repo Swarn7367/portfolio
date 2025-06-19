@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Heebo", sans-serif;
+    color: #21243d;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    max-height: 200vh;
+    background-color: white;
+    gap: 40px;
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    width: 80%;
+    max-width: 100vw;
+    color: black;
+    font-weight: 500;
+    gap: 20px;
+    padding: 20px 0px;
+}
+.nav a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav img{
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    justify-content: space-between;
+    gap: 30px;
+}  
+.info h1{
+    font-size: 44px;
+    font-weight: 700;
+} 
+.img img{
+    width: 243px;
+    height: 243px;
+    border: 1px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+} 
+button{
+    width: 208px;
+    height: 47px;
+    background-color: #FF6464;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    max-width: 100vw;
+    width: 100%;
+    min-height: 350px;
+    background-color: #EDF7FA;
+    gap: 20px;
+}
+.recentnav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 58%; 
+}
+.recentnav span{
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.recentnav a{
+    padding-top: 20px;
+    text-decoration: none;
+}
+.recent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    gap: 20px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    gap: 20px;
+}
+.box h2{
+    font-size: 26px;
+    font-weight: 700;
+}
+.box div{
+    display: flex;
+    gap: 80px;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.worknav{
+    width: 100%;
+    font-size: 22px;
+    font-weight: 400;
+}
+.works{
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    gap: 20px;
+}
+.work1{
+    display: flex;
+    gap: 15px;
+}
+.work1 img{
+    width: 246px;
+    height: 180px;
+    border-radius: 6px;
+}
+.workinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 10px;
+}
+.work1 div h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.work1 div div{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 50px;
+}
+.work1 div div span:first-child{
+    width: 62px;
+    height: 25px;
+    border-radius: 16px;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px;
+    background-color: #142850;
+    display: flex;
+    justify-content: center;
+}
+.work1 div span{
+    font-size: 20px;
+    font-weight: 400;
+}
+.fourth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px;
+}
+.fourth div{
+    display: flex;
+}
+.fourth a img{
+    width: 30px;
+    margin: 15px;
+}
+@media (max-width:400px){
+    .nav a{
+        visibility: hidden;
+        width: 0pv;
+        height: 0px;
+    }
+    .nav img{
+        visibility: visible;
+        width: 40px;
+        height: 40px;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .recentnav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+    .recentnav a{
+        visibility: hidden;
+        width: 0px;
+    }
+    .recent{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .worknav{
+        display: flex;
+        justify-content: center;
+    }
+    .work1{
+        display: flex;
+        flex-direction: column;
+    }
+}
