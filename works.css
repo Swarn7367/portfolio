@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Heebo", sans-serif;
+    color: #21243d;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    max-height: 200vh;
+    background-color: white;
+    gap: 40px;
+}
+header{
+    width: 100%;
+}
+.nav {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    color: black;
+    font-weight: 500;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.nav a {
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav a:nth-child(1) {
+    color: #FF6464;
+}
+.nav img {
+   width: 0px;
+    height: 0px;
+     visibility: hidden;
+}
+
+.menu {
+    position: fixed;
+    background-color: #21243d;
+    right: 0px;
+    top: 80px;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.menu img {
+    width: 40px;
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.menu div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.menu div a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    max-width: 80vw;
+    margin: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.work1 {
+    display: flex;
+    gap: 15px;
+}
+
+.work1 img {
+    width: 246px;
+    height: 180px;
+    border-radius: 6px;
+}
+
+.workinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 10px;
+}
+
+.work1 div h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.work1 div div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+
+.work1 div div span:first-child {
+    width: 62px;
+    height: 25px;
+    border-radius: 16px;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px;
+    background-color: #142850;
+    display: flex;
+    justify-content: center;
+}
+
+.work1 div span {
+    font-size: 20px;
+    font-weight: 400;
+}
+.work1 div span:last-child{
+    color: #8695A4;
+
+}
+.fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px;
+}
+
+.fourth div {
+    display: flex;
+}
+
+.fourth a img {
+    width: 30px;
+    margin: 15px;
+}
+@media (max-width:450px) {
+    .nav a {
+        visibility: hidden;
+        width: 0pv;
+        height: 0px;
+    }
+
+    .nav img {
+        visibility: visible;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .work1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .work1 img{
+       width: 100%;
+    }
+    .work1 div div{
+        gap: 10px;
+    }
+}
