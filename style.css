@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
-*{
+
+* {
     padding: 0px;
     margin: 0px;
     font-family: "Heebo", sans-serif;
     color: #21243d;
 
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +17,8 @@ body{
     background-color: white;
     gap: 40px;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: right;
     width: 80%;
@@ -25,40 +28,82 @@ body{
     gap: 20px;
     padding: 20px 0px;
 }
-.nav a{
+
+.nav a {
     font-size: 20px;
     text-decoration: none;
 }
-.nav img{
+
+.nav img {
     width: 0px;
     height: 0px;
     visibility: hidden;
 }
-.profile{
+.nav a:hover{
+    text-decoration: 3px underline;
+}
+
+.menu {
+    position: fixed;
+    background-color: #21243d;
+    right: 0px;
+    top: 80px;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.menu img {
+    width: 40px;
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.menu div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.menu div a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+
+.profile {
     display: flex;
     justify-content: center;
     gap: 40px;
 }
-.info{
+
+.info {
     display: flex;
     flex-direction: column;
     max-width: 50vw;
     justify-content: space-between;
     gap: 30px;
-}  
-.info h1{
+}
+
+.info h1 {
     font-size: 44px;
     font-weight: 700;
-} 
-.img img{
+}
+
+.img img {
     width: 243px;
     height: 243px;
     border: 1px solid black;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
-} 
-button{
+}
+
+button {
     width: 208px;
     height: 47px;
     background-color: #FF6464;
@@ -69,13 +114,21 @@ button{
     border-radius: 2px;
     cursor: pointer;
 }
-main{
+button:hover{
+    background-color: #ffc664;
+}
+button a {
+    text-decoration: none;
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
-.sec{
+
+.sec {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,22 +139,26 @@ main{
     background-color: #EDF7FA;
     gap: 20px;
 }
-.recentnav{
+
+.recentnav {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 58%; 
+    gap: 58%;
 }
-.recentnav span{
+
+.recentnav span {
     font-size: 22px;
     font-weight: 400;
     padding-top: 20px;
 }
-.recentnav a{
+
+.recentnav a {
     padding-top: 20px;
     text-decoration: none;
 }
-.recent{
+
+.recent {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +166,8 @@ main{
     height: 100%;
     gap: 20px;
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -118,59 +176,70 @@ main{
     padding: 10px;
     gap: 20px;
 }
-.box h2{
+
+.box h2 {
     font-size: 26px;
     font-weight: 700;
 }
-.box div{
+
+.box div {
     display: flex;
-    gap: 80px;
+    gap: 30px;
 }
-.third{
+
+.third {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.worknav{
+
+.worknav {
     width: 100%;
     font-size: 22px;
     font-weight: 400;
 }
-.works{
+
+.works {
     display: flex;
     flex-direction: column;
     max-width: 80vw;
     gap: 20px;
 }
-.work1{
+
+.work1 {
     display: flex;
     gap: 15px;
 }
-.work1 img{
+
+.work1 img {
     width: 246px;
     height: 180px;
     border-radius: 6px;
 }
-.workinfo{
+
+.workinfo {
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
     gap: 10px;
 }
-.work1 div h2{
+
+.work1 div h2 {
     font-size: 30px;
     font-weight: 700;
 }
-.work1 div div{
+
+.work1 div div {
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 50px;
+    gap: 30px;
 }
-.work1 div div span:first-child{
+
+.work1 div div span:first-child {
     width: 62px;
     height: 25px;
     border-radius: 16px;
@@ -182,64 +251,97 @@ main{
     display: flex;
     justify-content: center;
 }
-.work1 div span{
+
+.work1 div span {
     font-size: 20px;
     font-weight: 400;
 }
-.fourth{
+
+.fourth {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 80px 0px;
 }
-.fourth div{
+
+.fourth div {
     display: flex;
 }
-.fourth a img{
+
+.fourth a img {
     width: 30px;
     margin: 15px;
 }
-@media (max-width:400px){
-    .nav a{
+
+@media (max-width:450px) {
+    .nav a {
         visibility: hidden;
         width: 0pv;
         height: 0px;
     }
-    .nav img{
+
+    .nav img {
         visibility: visible;
         width: 40px;
         height: 40px;
+        cursor: pointer;
     }
-    .profile{
+
+    .profile {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
     }
-    .recentnav{
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info h1 {
+        text-align: center;
+    }
+
+    .info p {
+        text-align: center;
+    }
+
+    .recentnav {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 0px;
     }
-    .recentnav a{
+
+    .recentnav a {
         visibility: hidden;
         width: 0px;
     }
-    .recent{
+
+    .recent {
         display: flex;
         flex-direction: column;
     }
-    .box{
+
+    .box {
         display: flex;
         flex-direction: column;
         width: 80%;
     }
-    .worknav{
+
+    .worknav {
         display: flex;
         justify-content: center;
     }
-    .work1{
+
+    .work1 {
         display: flex;
         flex-direction: column;
+    }
+
+    .work1 img {
+        width: 100%;
     }
 }
